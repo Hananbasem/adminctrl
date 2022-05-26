@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html dir="rtl">
+<section>
+  <div class="row">
+    <div class="col-12">
+      <div class="card card-primary">
+
+        <div class="card-header">
+          <h3 class="card-title">معلومات المستخدم</h3>
+        </div>
+        <!--card body-->
+        <div class="card-body">
+          <form (ngSubmit)="submit()" [formGroup]="form">
+            <div class="form-group">
+              <label for="firstName">اسم المستخدم</label>
+              <input class="form-control" formControlName="firstName" id="firstName" type="text" readonly="readonly">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">اسم المستخدم</label>
+                <input class="form-control" formControlName="lastName" id="lastName" type="text" readonly="readonly">
+              </div>
+
+
+            <div class="form-group">
+              <label for="job">العمل</label>
+              <input class="form-control" formControlName="job" id="job" type="text" readonly="readonly">
+            </div>
+
+            
+            
+            <div class="form-group">
+                <label for="mobile">رقم الموبايل</label>
+                <input class="form-control" formControlName="mobile" id="mobile" type="text" readonly="readonly">
+              </div>
+
+              
+            <div class="form-group">
+                <label for="role">تعديل الصلاحية</label>
+                <div class="col-4">
+                    <select
+                    class="form-control" formControlName="role" id="role" type="text">
+                    <option value="" disabled> تحديد الصلاحية</option>
+                    <option *ngFor="let r of roles" [ngValue]="r"> {{r.name}}</option>
+                </select>
+                </div>
+              </div>
+        
+        
+            <!-- /.card-body -->
+          </form>
+        </div>
+        <!-- /.card -->
+
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-12">
+          <a (click)="dialogRef.close()" class="btn btn-secondary">إلغاء</a>
+          <input (click)="save()" class="btn btn-success float-right" type="submit"
+                 value="حفظ">
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- /.content -->
+<!-- /.content-wrapper -->
+
+</html>
+
+

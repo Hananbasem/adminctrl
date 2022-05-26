@@ -1,0 +1,30 @@
+<!-- MAIN (Center website) -->
+<html dir="rtl">
+<div class="main">
+  <br>
+  <h2> قائمة المنتجات
+  <button class="float-right" type="submit" (click)="openAddProductDialog()">  <i class="nav-icon far fa-plus-square"></i>  إضافة منتج  </button></h2>
+  
+  <hr>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row" >
+    <div class="column" *ngFor="let pro of producttest">
+      <div class="content">
+        <img src= "{{ pro.image}}" alt="Mountains" style="width:100%">
+        <br>
+        <br>
+        <h6> المنتج : {{ pro.name}} </h6>
+        <hr>
+        <h6> السعر: {{pro.price}}</h6>
+        <hr>
+        <p>{{pro.description}} </p>
+        <hr>
+        <input type="button" value="حذف" (click)="deleteProduct(pro.id)">
+        <input type="button" value="تعديل" (click)="editProduct(pro)">             
+      </div>
+    </div>    
+  </div> 
+  <!-- END MAIN -->
+  </div>
+</html>

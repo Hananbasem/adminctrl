@@ -1,0 +1,84 @@
+
+
+<html dir="rtl">
+    <div class="card">
+      <div class="card-header">
+        <h3 class="card-title">قائمة المستخدمين </h3>
+    
+      
+      </div>
+      <div class="card-body p-0">
+       
+        <table class="table table-striped projects">
+          <thead>
+          <tr>
+            <th style="width: 1%">
+              #
+            </th>
+            <th style="width: 20%">
+              اسم المستخدم
+            </th>
+    
+            <th style="width: 20%;">
+            الكنية   
+                </th>
+            <th style="width: 10%;">
+             العمل
+            </th>
+
+            <th style="width: 10%;">
+              الصلاحية
+             </th>
+    
+            <th style="width: 20%">
+            </th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let u of userstest">
+            <th>{{ u.id }}</th>
+            <td>
+              <a>
+                {{ u.firstName }}
+              </a>
+              <br/>
+            </td>
+    
+            <td>
+              <a>
+                {{ u.lastName }}
+              </a>
+              <br/>
+            </td>
+
+           
+            <td>
+              <a>
+                {{ u.role }}
+              </a>
+              <br/>
+            </td>
+            
+            <td class="project-actions text-left">
+              <a (click)="deleteuser(u.id)" class="btn btn-danger btn-sm" >
+                حذف
+              </a>
+
+              <td class="project-actions text-left">
+                <a (click)="editrole(u)" class="btn btn-danger btn-sm" >
+                  تعديل الصلاحية
+                </a>
+            
+            </td>
+            
+          </tr>
+          </tbody>
+        </table>
+    
+    
+      </div>
+      <!-- /.card-body -->
+    
+    
+    </div>
+   </html>

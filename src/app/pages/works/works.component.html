@@ -1,0 +1,28 @@
+<!-- MAIN (Center website) -->
+<html dir="rtl">
+<div class="main">
+  <br>
+  <h2> قائمة أعمال المركز
+  <button class="float-right" type="submit" (click)="openAddWorkDialog()">  <i class="nav-icon far fa-plus-square"></i>إضافة عمل   </button></h2>
+  
+  <hr>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row" >
+    <div class="column" *ngFor="let w of worktest">
+      <div class="content">
+        <img src= "{{ w.image}}" alt="Mountains" style="width:100%">
+        <br>
+        <br>
+        <h6> {{ w.name}} </h6>
+        <hr>
+        <p>{{w.description}} </p>
+        <hr>
+        <input type="button" value="حذف" (click)="deleteWork(w.id)">
+        <input type="button" value="تعديل" (click)="editWork(w)">             
+      </div>
+    </div>    
+  </div> 
+  <!-- END MAIN -->
+  </div>
+</html>

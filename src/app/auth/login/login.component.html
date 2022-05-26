@@ -1,0 +1,42 @@
+<div>
+    <section class="section-body">
+      <div class="row">
+        <div class="col-12">
+          <div class="card card-primary">
+  
+            <div class="card-header container">
+              <h3 class="card-title container">تسجيل الدخول</h3>
+            </div>
+            <!--card body-->
+            <div class="card-body">
+              <form [formGroup]="form">
+                <div class="form-group">
+                  <label for="name">اسم المستخدم</label>
+                  <input class="form-control" formControlName="username" id="name" type="text">
+                </div>
+  
+  
+                <div class="form-group">
+                  <label for="password">كلمة المرور</label>
+                  <input class="form-control" formControlName="password" id="password" type="password">
+                </div>
+  
+                <div class="row">
+                  <div class="col-12">
+                    <a (click)="form.valid && submit()" type="submit" class="btn btn-secondary">تسجيل الدخول</a>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+              </form>
+            </div>
+            <!-- /.card -->
+  
+            <br>
+          </div>
+  
+        </div>
+  
+      </div>
+    </section>
+  </div>
+  

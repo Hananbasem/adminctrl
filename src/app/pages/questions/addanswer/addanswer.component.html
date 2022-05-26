@@ -1,0 +1,42 @@
+<html dir="rtl">
+<div class="col-md-6">
+    <!-- general form elements -->
+    <form (ngSubmit)="submit()" [formGroup]="form" >
+    <div class="card card-primary">
+      <div class="card-header">
+        <h3 class="card-title">إضافة إجابة</h3>
+      </div>
+      <!-- /.card-header -->
+      <!-- form start -->
+     
+        <div class="card-body">                     
+            <div class="form-group">
+              <label for="questionText">السؤال</label>
+              <input type="text" class="form-control" formControlName="questionText" id="questionText">
+            </div>
+          
+        
+          <div class="form-group">
+            <label for="answer">الجواب</label>
+            <input type="answer" class="form-control" formControlName="answer" id="answer">
+          </div>
+          
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="common">
+            <label class="form-check-label" for="common">سؤال شائع</label>
+          </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+          <button type="submit" class="btn btn-primary"> إضافة جواب </button>
+          <a (click)="dialogRef.close()" class="btn btn-secondary">إلغاء</a>
+        </div>
+  
+    </div>
+    <!-- /.card -->
+    </form>
+    </div>
+
+
+</html>

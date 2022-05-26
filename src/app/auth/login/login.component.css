@@ -1,0 +1,53 @@
+.login-body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .section-body {
+    margin: auto;
+    margin-top: 5rem;
+  }
+  
+  .card-title {
+    direction: rtl;
+    float: right;
+    margin-right: 0;
+    margin-left: 16px;
+    text-align: center;
+  }
+  
+  .inputName {
+    direction: rtl;
+  }
+  
+  .content {
+    margin-right: 16px;
+    margin-top: 40px;
+  
+  }
+  
+  .card {
+    border-color: #082b2b;
+    margin: auto;
+    width: 25vw;
+    height: 60vh;
+  }
+  
+  .form-control {
+    border-color: #082b2b;
+  }
+  
+  .card-primary:not(.card-outline) > .card-header {
+    background-color: #158585;
+  }
+  
+  .btn-success {
+    background-color: #158585;
+    border-color: #082b2b;
+  }
+  
+  .btn-secondary {
+    background-color: #158585;
+    border-color: #082b2b;
+  }
+  

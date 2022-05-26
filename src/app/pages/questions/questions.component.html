@@ -1,0 +1,49 @@
+<html dir="rtl">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-lg-6">
+              <!-- Section Heading-->
+              <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <br>
+                <h3> الأسئلة</h3>
+                  <br>
+                  <div class="line"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+          <!-- FAQ Area-->
+          <div class="col-12 col-sm-10 col-lg-8">
+              <div class="accordion faq-accordian" id="faqAccordion">
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;" 
+                  *ngFor="let q of questest">
+                      <div class="card-header" id="headingOne">
+                          <h5 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{q.questionText}}<span class="lni-chevron-up"></span></h5>
+                      </div>
+
+                      <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                          <div class="card-body">
+                              <p>{{q.answer}}</p>
+                              
+                          </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <input type="button" class="btn" value="إضافة إجابة" (click)="openAddanswerDialog(q)">  
+                        </div>
+                      </div>
+                  </div>
+                     
+                      
+                  </div>                
+                        
+              
+             
+               <!-- Support Button-->
+             
+              </div>
+            </div>
+  </div>
+  
+
+</html>

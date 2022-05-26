@@ -1,0 +1,20 @@
+{
+    "data":{
+    "products":[
+    {
+        "id": 7,
+        "name":"bioderma",
+        "price":"60000",
+        "image":null
+    },
+    {
+        "id": 10,
+        "name":"clean&clear",
+        "price":"50000",
+        "image":null
+    }
+
+    ]
+
+    }
+}

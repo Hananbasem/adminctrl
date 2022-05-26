@@ -1,0 +1,39 @@
+.card-title {
+    direction: rtl;
+    float: right;
+    margin-right: 0;
+    margin-left: 16px;
+  }
+  
+  .inputName {
+    direction: rtl;
+  }
+  
+  .content {
+    margin-right: 16px;
+    margin-top: 40px;
+  
+  }
+  
+  .card {
+    border-color: #082b2b;
+  }
+  
+  .form-control {
+    border-color: #082b2b;
+  }
+  
+  .card-primary:not(.card-outline) > .card-header {
+    background-color: #158585;
+  }
+  
+  .btn-success {
+    background-color: #158585;
+    border-color: #082b2b;
+  }
+  
+  .btn-secondary {
+    background-color: #158585;
+    border-color: #082b2b;
+  }
+  

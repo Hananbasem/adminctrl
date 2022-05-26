@@ -1,0 +1,28 @@
+<!-- MAIN (Center website) -->
+<html dir="rtl">
+<div class="main">
+  <br>
+  <h2> قائمة العروض
+  <button class="float-right" type="submit" (click)="openAddOfferDialog()">  <i class="nav-icon far fa-plus-square"></i>  إضافة عرض  </button></h2>
+  
+  <hr>
+  
+  <!-- Portfolio Gallery Grid -->
+  <div class="row" >
+    <div class="column" *ngFor="let off of offertest">
+      <div class="content">
+        <img src= "{{ off.image}}" alt="Mountains" style="width:100%">
+        <br>
+        <br>
+        <h6> {{ off.name}} </h6>
+        <hr>
+        <p>{{off.description}} </p>
+        <hr>
+        <input type="button" value="حذف" (click)="deleteOffer(off.id)">
+        <input type="button" value="تعديل" (click)="editOffer(off)">             
+      </div>
+    </div>    
+  </div> 
+  <!-- END MAIN -->
+  </div>
+</html>

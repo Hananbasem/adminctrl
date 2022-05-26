@@ -1,0 +1,16 @@
+.brand-link {
+  border-color: #008080;
+  border-style: outset;
+  border-width: 2mm;
+  background-color:#d6e0e0;
+
+}
+
+.user-panel {
+  border-color: #008080;
+  border-top-left-radius: 3mm;
+}
+
+.sidebar {
+  background-color: #d6e0e0;
+}
